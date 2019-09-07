@@ -1,0 +1,34 @@
+$dateSize: 100px;
+
+.news-card {
+  position: relative;
+  box-shadow: 6px 6px 15px 1px #777;
+
+  img {
+    transition: transform 0.5s ease-in-out;
+    transform-origin: 50% bottom;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+  h2 {
+    text-shadow: 8px 5px 10px #aaa;
+  }
+  .date {
+    position: absolute;
+    overflow: hidden;
+    width: $dateSize;
+    height: $dateSize;
+    top: 15px;
+    left: -15px;
+    background-color: rgb(60, 60, 223);
+    box-shadow: -6px 6px 15px 1px #777;
+    transition: opacity 0.4s;
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+}

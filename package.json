@@ -1,0 +1,38 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "react-start": "cd client && npm start",
+    "react-build": "cd client && npm run build",
+    "electron": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "electron-is-dev": "^1.1.0",
+    "electron-reload": "^1.5.0"
+  },
+  "devDependencies": {
+    "electron": "^6.0.7",
+    "electron-builder": "^21.2.0",
+    "wait-on": "^3.3.0"
+  },
+  "build": {
+    "appId": "com.electron.electron-with-create-react-app",
+    "directories": {
+      "buildResources": "client/public"
+    }
+  }
+}

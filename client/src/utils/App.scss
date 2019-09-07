@@ -1,0 +1,42 @@
+$primary: #1e2258;
+$dark: #555;
+$secondary: #999;
+
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Farro&display=swap");
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Farro, Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(45deg, #ccc, #eee);
+}
+
+.my-6 {
+  margin-top: 180px !important;
+  margin-bottom: 180px !important;
+}
+.mt-6 {
+  margin-top: 180px !important;
+}
+.mb-6 {
+  margin-bottom: 180px !important;
+}
+
+.display-3 {
+  text-shadow: 3px 5px 20px #999;
+  @media screen and (max-width: 992px) {
+    font-size: 40px;
+  }
+}
+.display-4 {
+  text-shadow: 3px 5px 20px #999;
+  @media screen and (max-width: 992px) {
+    font-size: 40px;
+  }
+}
+
+::selection {
+  background-color: $primary;
+  color: #fff;
+}

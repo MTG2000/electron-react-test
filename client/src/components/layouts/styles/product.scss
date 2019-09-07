@@ -1,0 +1,23 @@
+.productPage {
+  min-height: 100vh;
+  perspective: 3000px;
+  .imageWrapper {
+    width: 100%;
+    max-width: 550px;
+    height: 50vh;
+    max-height: 400px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease-in-out;
+      background-color: #999;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2) rotate(-7deg);
+      }
+    }
+  }
+}
